@@ -47,10 +47,10 @@ function DebugPanel({ isDisplayed, routes }: Props) {
 const DebugPanelContainer = styled.div`
   position: absolute;
   bottom: 0;
+  right: 0;
   background-color: rgb(0 0 0 / 0.4);
   width: 216px;
   padding: 1em 0.5em;
-  border-radius: 0 0.5em 0 0;
   color: white;
   font-weight: bold;
   z-index: 99;

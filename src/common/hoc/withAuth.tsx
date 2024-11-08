@@ -4,6 +4,7 @@ import { AuthKey } from "../constants/keys";
 import Unauth from "../components/middleware/unauth";
 import { useLoadingContext } from "react-router-loading";
 import useAccountContext from "../contexts/AccountContext";
+import Navbar from "../components/Navbar/Navbar";
 
 function withAuth(authType: AuthKey) {
   return <P extends object>(WrappedComponent: React.ComponentType<P>) => {
@@ -25,6 +26,7 @@ function withAuth(authType: AuthKey) {
       if (authType === AuthKey.UserAuth && accountData) {
         return (
           <>
+            <Navbar />
             <WrappedComponent {...props} />
           </>
         );

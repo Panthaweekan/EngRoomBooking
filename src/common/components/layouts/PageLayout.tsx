@@ -43,7 +43,7 @@ const StyledLayout = styled.div`
 
   &.content-layout {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     gap: 1em;
 
     &.-expanded {
