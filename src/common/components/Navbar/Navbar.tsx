@@ -67,11 +67,21 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="navbar w-[263px] p-4 border-1 border-r"
+      className="navbar w-[263px] p-4 border-1 border-r overflow-hidden"
       role="navigation"
       aria-label="Main Navigation"
     >
       <ul className="navbar-nav">
+        <div
+          className="absolute bg-[#FFF6EE] bg-gradient-to-t from-[#FFC895]/35 rounded-full pointer-events-none"
+          style={{
+            width: "483px",
+            height: "483px",
+            left: "311px",
+            top: "850px",
+            transform: "translate(-100%, -20%)",
+          }}
+        ></div>
         {renderNavHeader(ClientRouteKey.Home, "/imgs/icon.svg", "")}
         {renderNavItem(ClientRouteKey.Book, "/imgs/bookmark.svg", "จองห้อง")}
         {renderNavItem(
