@@ -1,10 +1,11 @@
 import React from "react";
 import { CheckCircleIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
+import PageContainer from "../../common/components/container/PageContainer";
 
 const CalendarPage: React.FC = () => {
   return (
-    <div className="w-screen">
-      <div className="w-[1000px] overflow-y-auto p-10">
+    <PageContainer>
+      <div className="w-[1000px] overflow-y-auto">
         <div className="flex flex-row gap-2">
           <img src="/imgs/calendar.svg" />
           <h1 className="text-maincolor text-xl">ปฎิทินการจองห้อง</h1>
@@ -27,7 +28,7 @@ const CalendarPage: React.FC = () => {
         </div>
         <img src="/imgs/mock_calendar.svg" />
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

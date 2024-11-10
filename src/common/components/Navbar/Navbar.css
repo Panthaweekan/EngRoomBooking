@@ -1,11 +1,15 @@
 .navbar {
   background-color: #fff;
   color: #fff;
-  display: flex;
   flex-direction: column; /* Stack links vertically */
-  position: relative; /* Fix the navbar to the viewport */
+  position: fixed; /* Fix the navbar to the viewport */
   left: 0; /* Position at left */
   height: 100vh; /* Make it full viewport height */
+  width: 250px; /* Set a fixed width for the navbar */
+}
+
+.main-content {
+  margin-left: 250px; /* Add margin to main content to avoid overlay */
 }
 /* ... rest of your CSS remains the same ... */
 
